@@ -64,6 +64,7 @@ body {
     background-color: #fff;
     float: right;
     margin-top: 14px;
+    color: black;
 }
 
 .product {
@@ -137,6 +138,7 @@ body {
 
 .box-plus-product-1 {
     float: left;
+    margin: 0 0 0 41px;
 }
 
 .box-plus-product-2 {
@@ -150,21 +152,21 @@ details {
     line-height: 24px;
     font-weight: 400;
     color: #333333;
-    /*position: relative;*/
+    position: relative;
 }
 
-
-/*.details:before {
+details:before {
     content: "";
     display: block;
     width: 32px;
     height: 32px;
     position: absolute;
-    top: 0px;
-    left: 0px;
-    outline: 2px solid red;
+    top: 5px;
+    left: -41px;
     background-color: #445161;
-}*/
+    border-image: url(img/layer_2_30.png);
+    background-size: cover;
+}
 
 summary {
     width: 525px;
@@ -393,10 +395,8 @@ details[open] summary::before {
     line-height: 24px;
 }
 
-.buy-item-li {}
-
 .buy-btn {
-    margin: 0 20px 20px 20px;
+    margin: 0 auto 20px auto;
     width: 246px;
     min-height: 40px;
     border: 1px solid #ffffff;
@@ -407,8 +407,7 @@ details[open] summary::before {
     font-size: 18px;
     font-weight: 700;
     outline: none;
-    
-    display: flex;  
+    display: flex;
 }
 
 .buy-btn-txt {
@@ -424,3 +423,34 @@ details[open] summary::before {
     background-color: #f5f5f5;
     border: 1px solid #f5f5f5;
 }
+
+.main-footer {
+    width: 100%;
+    background-color: #445162;
+    display: flex;
+    
+}
+
+.footer-contact {}
+
+.footer-contact-h2 {
+    width: 100%;
+    margin: 0 0 30px 0;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.footer-contact-form {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-contact input {}
+
+.footer-contact textarea {}
