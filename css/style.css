@@ -1,8 +1,8 @@
 @font-face {
-font-family: "Socialico";
-src: url("../fonts/socialico.ttf") format("truetype");
-font-weight: normal;
-font-style: normal;
+    font-family: "Socialico";
+    src: url("../fonts/socialico.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
@@ -48,7 +48,7 @@ body {
 .header-link {
     list-style-type: none;
     font-size: 20px;
-    padding: 0 0 10px 0;
+    margin: 0 0 10px 0;
     position: relative;
 }
 
@@ -60,8 +60,12 @@ body {
     position: absolute;
     top: 0px;
     left: -40px;
-    background-image: url(img/check_icon_346.png);
+    background-image: url(../img/check_icon_346.png);
     background-size: cover;
+}
+
+.header-link:last-child {
+    margin: 0;
 }
 
 .header-video {
@@ -152,6 +156,10 @@ body {
     float: right;
 }
 
+.plus-product details:last-child {
+margin: 0;
+}
+
 details {
     margin: 0 0 30px 0;
     width: 530px;
@@ -163,7 +171,11 @@ details {
 }
 
 details:before {
-    content: "";
+    content: "+";
+    text-align: center;
+    line-height: 32px;
+    color: #ffffff;
+    font-size: 30px;
     display: block;
     width: 32px;
     height: 32px;
@@ -171,8 +183,6 @@ details:before {
     top: 5px;
     left: -41px;
     background-color: #445161;
-    border-image: url(img/layer_2_30.png);
-    background-size: cover;
 }
 
 summary {
@@ -305,6 +315,8 @@ details[open] summary::before {
 }
 
 .reviews-item-text {
+    box-sizing: border-box;
+    padding: 16px;
     background-color: #ebebeb;
     width: 468px;
     border-radius: 8px;
@@ -325,7 +337,7 @@ details[open] summary::before {
 }
 
 .reviews-p {
-    margin: 16px 16px 15px 16px;
+    margin: 0px 0px 5px 0px;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
@@ -334,7 +346,7 @@ details[open] summary::before {
 }
 
 .reviews-c {
-    margin: 0 16px 16px 16px;
+    margin: 0;
     display: block;
     font-size: 14px;
     font-weight: 400;
@@ -523,7 +535,7 @@ details[open] summary::before {
 }
 
 .footer-contact-icon {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
     font-weight: 400;
     color: #ffffff;
@@ -535,5 +547,47 @@ details[open] summary::before {
 }
 
 .footer-contact-icon-li {
-    margin: 0 0 20px 0;
+    margin: 0 0 15px 0;
+}
+
+.footer-contact-icon-li:before {
+    content: ".fab {
+
+}
+
+.fab,
+.fas {
+    font-size: 25px;
+    font-weight: 100;
+    margin: 0 0 0 0;
+}
+
+.footer-contact-icon-wrp {
+    width: 240px;
+    margin: 40px 0 0 33px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-contact-icon-a {
+    display: block;
+    font-family: Socialico;
+    font-size: 60px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-copyright {
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+.footer-copyright-p {
+    margin: 0;
+    color: #445162;
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 20px;
+    text-align: center;
 }
