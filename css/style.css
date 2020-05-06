@@ -68,7 +68,7 @@ body {
     margin: 0;
 }
 
-.header-video {
+.header-photo {
     display: block;
     width: 469px;
     min-height: 214px;
@@ -434,8 +434,8 @@ details[open] summary::before {
 }
 
 .buy-btn:hover {
-    background-color: #ebebeb;
-    border: 1px solid #ebebeb;
+    background-color: #cacaca;
+    border: 1px solid #cacaca;
 }
 
 .buy-btn:active {
@@ -491,7 +491,7 @@ details[open] summary::before {
 .footer-contact-form input[type="email"]:hover,
 .footer-contact-form textarea:hover {
     background-color: #ebebeb;
-    color: white;
+    color: #445161;
     border-color: white;
 }
 
@@ -525,8 +525,7 @@ details[open] summary::before {
 }
 
 .footer-contact-form input[type="submit"]:hover {
-    background-color: #ebebeb;
-    color: white;
+    background-color: #cacaca;
 }
 
 .footer-contact-form input[type="submit"]:active {
@@ -547,19 +546,37 @@ details[open] summary::before {
 }
 
 .footer-contact-icon-li {
-    margin: 0 0 15px 0;
+    margin: 0 0 15px 38px;
+    position: relative;
 }
 
-.footer-contact-icon-li:before {
-    content: ".fab {
-
+.footer-contact-icon-li::before {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -1px;
+    left: -34px;
 }
 
-.fab,
-.fas {
-    font-size: 25px;
-    font-weight: 100;
-    margin: 0 0 0 0;
+.footer-contact-icon-li:nth-of-type(1):before {
+    background-image: url(../img/skype_icon_319.png);
+}
+
+.footer-contact-icon-li:nth-of-type(2):before {
+    background-image: url(../img/icq_icon_324.png);
+}
+
+.footer-contact-icon-li:nth-of-type(3):before {
+    background-image: url(../img/email_icon_332.png);
+}
+
+.footer-contact-icon-li:nth-of-type(4):before {
+    background-image: url(../img/phone_icon_337.png);
 }
 
 .footer-contact-icon-wrp {
@@ -576,6 +593,14 @@ details[open] summary::before {
     font-size: 60px;
     color: #ffffff;
     text-decoration: none;
+}
+
+.footer-contact-icon-a:hover {
+    color: #cacaca;
+}
+
+.footer-contact-icon-a:active {
+    color: #ffffff;
 }
 
 .footer-copyright {
